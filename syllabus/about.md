@@ -1,6 +1,6 @@
 # About
 
-### About this course
+## About this course
 
 Data science exists at the intersection of computer science, statistics, and machine
 learning. That means writing programs to access and manipulate data so that it becomes
@@ -21,26 +21,26 @@ machine learning models of a given data set.
 
 Basic programming skills (CSC201 or CSC211) are a prerequisite to this course. This course is a prerequisite course to machine learning, where you learn how machine learning algorithms work. In this course, we will start with a very fast review of basic programming ideas, since you've already done that before. We will learn how to *use* machine learning algorithms to do data science, but not how to *build* machine learning algorithms, we'll use packages that implement the algorithms for us.
 
-### About this semester
+## About this semester
 
 This semester is a lot of new things for all of us. This course will be completely online all semester, so we will get to use a single instructional format all semester, including when all campus activities move remote after Thanksgiving. I recognize that those last two weeks of the semester may change your obligations with siblings, parents, work, etc. In light of that, we will cover all of the most important topics and you will have the opportunity to achieve all of the course learning outcomes before Thanksgiving. The material in the last two weeks of the semester will be more advanced, likely interesting and definitely useful material, but if your ability to participate in class is less at that time, it will not hurt your grade.
 <!-- if after that break the change in circumstance allows you to focus less on coursework that will not hurt your grade. -->
 
 
-### About this syllabus
+## About this syllabus
 
 This syllabus is a *living*  document and accessible from BrightSpace, as a pdf for download directly online at [rhodyprog4ds.github.io/BrownFall20/syllabus](https://rhodyprog4ds.github.io/BrownFall20/syllabus/). If you choose to download a copy of it, note that it is only a copy. You can get notification of changes from GitHub by "watching" the [repository](https://github.com/rhodyprog4ds/BrownFall20). You can view the date of changes and exactly what changes were made on the Github [commits](https://github.com/rhodyprog4ds/BrownFall20/commits/main) page.
 
 Creating an [issue on the repository](https://github.com/rhodyprog4ds/BrownFall20/issues) is also a good way to ask questions about anything in the course it will prompt additions and expand the FAQ section.
 
 
-### About your instructor
+## About your instructor
 
 Name: Dr. Sarah Brown
 Office hours:  TBA via zoom, link in BrightSpace
 
 
-Dr. Brown is a new Assistant Professor of Computer Science, who does research on how social context changes machine learning. Dr. Brown earned a PhD in Electrical Engineering from Northeastern University, completed a postdoctoral fellowship at University of California Berkeley, and worked as a postdoctoral research associate at Brown University before joining URI. At Brown University, Dr. Brown taught the Data and Society course for the Master's in Data Science Program.
+Dr. Brown is an Assistant Professor of Computer Science, who does research on how social context changes machine learning. Dr. Brown earned a PhD in Electrical Engineering from Northeastern University, completed a postdoctoral fellowship at University of California Berkeley, and worked as a postdoctoral research associate at Brown University before joining URI. At Brown University, Dr. Brown taught the Data and Society course for the Master's in Data Science Program.
 
 ````{margin}
 ```{note}

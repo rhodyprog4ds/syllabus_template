@@ -3,15 +3,15 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: 0.12
-    jupytext_version: 1.6.0
+    format_version: 0.13
+    jupytext_version: 1.10.0
 kernelspec:
   display_name: Python 3
   language: python
   name: python3
 ---
 
-## Learning Objective, Schedule, and Rubric
+# Data Science Achievements
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -40,10 +40,16 @@ rubric_df = yml_df('../_data/rubric.yml')
 rubric_df.set_index('keyword', inplace=True)
 ```
 
+In this course there are 5 learning outcomes that I expect you to achieve by
+the end of the semester.  To get there, you'll focus on 15 smaller achievements
+that will be the basis of your grade.  This section will describe how the topics
+covered, the learning outcomes, and the achievements are covered over time. In
+the next section, you'll see how these achievements turn into grades.
 
-### Learning Outcomes
 
-There are five learning outcomes for this course.
+## Learning Outcomes
+
+By the end of the semester
 
 
 ```{code-cell} ipython3
@@ -59,15 +65,15 @@ display(Markdown('  \n'.join(outcome_list)))
 We will build your skill in the `process` and `communicate` outcomes over the whole semester. The middle three skills will correspond roughly to the content taught for each of the first three portfolio checks.  
 
 (schedule)=
-### Schedule
+## Schedule
 
 ````{margin}
 ```{note}
-On the [BrightSpace calendar](https://brightspace.uri.edu/d2l/le/calendar/101136) page you can get a feed link to add to the calendar of your choice by clicking on the subscribe (star) button on the top right of the page. Class is for 1 hour there because of Brightspace/zoom integration limitations, but that calendar includes the zoom link.
+On the {{ bscalendar }} page you can get a feed link to add to the calendar of your choice by clicking on the subscribe (star) button on the top right of the page. Class is for 1 hour there because of Brightspace/zoom integration limitations, but that calendar includes the zoom link.
 ```
 ````
 
-The course will meet MWF 1-1:50pm on Zoom. Every class will include participatory live coding (instructor types, students follow along)) instruction and small exercises for you to progress toward level 1 achievements of the new skills introduced in class that day.
+The course will meet {{ time }} in {{ location }}. Every class will include participatory live coding (instructor types code while explaining, students follow along)) instruction and small exercises for you to progress toward level 1 achievements of the new skills introduced in class that day.
 
 Programming assignments that will be due each week Tuesday by 11:59pm.
 
@@ -81,11 +87,11 @@ schedule_df.replace({None:'TBD'})
 schedule_df[['topics','skills']]
 ```
 
-(skill-rubric)=
-### Skill Rubric
+(achievement-definitions)=
+## Achievement Definitions
 
 
-The skill rubric describes how your participation, assignments, and portfolios will be assessed to earn each achievement. The keyword for each skill is a short name that will be used to refer to skills throughout the course materials; the full description of the skill is in this table.
+The table below describes how your participation, assignments, and portfolios will be assessed to earn each achievement. The keyword for each skill is a short name that will be used to refer to skills throughout the course materials; the full description of the skill is in this table.
 
 ```{code-cell} ipython3
 :tags: [remove-input]
@@ -104,12 +110,12 @@ rubric_df[['skill','Level 1','Level 2','Level 3']]
 :tags: [remove-input]
 
 
-assignment_dummies  = pd.get_dummies(rubric_df['assignments'].apply(pd.Series).stack()).sum(level=0)
+assignment_dummies  = pd.get_dummies(rubric_df['assignments'].apply(pd.Series).stack()).groupby(level=0).sum()
 assignment_dummies['# Assignments'] = assignment_dummies.sum(axis=1)
 col_rename = {float(i):'A' + str(i) for i in range(1,14)}
 assignment_dummies.rename(columns =col_rename,inplace=True)
 
-portfolio_dummies  = pd.get_dummies(rubric_df['portfolios'].apply(pd.Series).stack()).sum(level=0)
+portfolio_dummies  = pd.get_dummies(rubric_df['portfolios'].apply(pd.Series).stack()).groupby(level=0).sum()
 col_rename = {float(i):'P' + str(i) for i in range(1,5)}
 portfolio_dummies.rename(columns =col_rename,inplace=True)
 
@@ -130,6 +136,10 @@ Using the keywords from the table above, this table shows which assignments you 
 :tags: [remove-input]
 
 rubric_df[assignment_cols]
+```
+
+```{warning}
+**process** achievements are accumulated a little slower. Prior to portfolio check 1, only level 1 can be earned.  Portfolio check 1 is the first chance to earn level 2 for process, then level 3 can be earned on portfolio check 2 or later.
 ```
 
 (portfolioskills)=

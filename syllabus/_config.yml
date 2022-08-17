@@ -1,7 +1,7 @@
 # Book settings
 title: Programming for Data Science at URI Fall 2021
 author: Professor Sarah M Brown
-logo: img/310_2021.png
+logo: ../img/310_2021.png
 
 html:
   favicon                   : ""  # A path to a favicon image
@@ -24,7 +24,7 @@ latex:
   latex_documents:
     targetname: book.tex
 
-exclude_patterns            : ['_data/*',  README.md, ignore/*, syllabus/_config.yml, syllbus/_toc_syllabus.yml]  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+exclude_patterns            : ['_data/*',  README.md, ignore/*]  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 
 #######################################################################################
 # Execution settings

@@ -1,16 +1,102 @@
-# GitHub FAQ
+# Git and GitHub
 
 
-````{dropdown} My portfolio won't compile
+<!--
+````{toggle}
 
-If there's an error your notebook it can't complete running. You can allow it to run if the error is on purpose by changing settings as mentioned on the [formatting](portfolio/formatting) page. 
+````
+ -->
+## I can't push to my repository, I get an error that updates were rejected
+````{toggle}
 
+```
+! [rejected] main -> main (fetch first)
+error: failed to push some refs to <repository name>
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+```
+
+Your local version and github version are out of sync, you need to pull the changes from github to your local computer before you can push new changes there.  
+
+After you run
+```
+git pull
+```
+
+You'll probably have to [resolve a merge conflict](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)
+````
+
+## The content I added to my portfolio isn't in the pdf
+
+````{toggle}
+There was an error in the original `_toc.yml` file, change yours to match the following:
+
+```
+format: jb-book
+root: intro
+parts:
+  - caption: About
+    chapters:
+    - file: about/index
+    - file: about/grading
+#  - caption: Check 1
+#    chapters:
+#    - file: submission_1_intro
+```
+
+uncomment the later lines and add any new files you add.
 ````
 
 
 
-````{dropdown} Help! I accidentally merged the Feedback Pull Request before my assignment was graded
 
+## My command line says I cannot use a password
+````{toggle}
+GitHub has [strong rules](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/about-authentication-to-github) about authentication
+You need to use SSH with a public/private key; HTTPS with a [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) or use the [GitHub CLI](https://cli.github.com/) [auth](https://cli.github.com/manual/gh_auth_login)
+
+````
+
+## My .ipynb file isn't showing in the staging area or didn't push
+````{toggle}
+.ipynb files are json that include all of the output, including tables as html and plots as svg, so, unlike plain code files, they don't play well with
+version control.  
+
+Your portfolio has `*/*.ipynb` in the `.gitignore` file, so that these files do
+not end up in your repository.  Instead, you'll convert your notebooks to
+[Myst Markdown](https://myst-parser.readthedocs.io/en/latest/) with
+[jupytext](https://jupytext.readthedocs.io/) via a
+[precommit hook](https://jupytext.readthedocs.io/en/latest/using-pre-commit.html).
+
+Your portfolio has the code to do this already, what you should do is make sure
+that `pre-commit` is installed and then run `pre-commit install`  
+(see your portfolio's README.md file for more detail)
+
+If this doesn't work, you can follow the alterntive in the porfolio readme.
+
+If that doesn't work, and you have time before the deadline, create an issue to
+get help.  
+
+As a last resort, use the jupyter interface to download (File > Download as > ...)your notebook as `.md`
+if avialable or `.py` if not and then move that file from your Downloads folder
+to your repository.  We'll set up another workflow for future work
+````
+
+
+## My portfolio won't compile
+````{toggle}
+If there's an error your notebook it can't complete running. You can allow it to run if the error is on purpose by changing settings as mentioned on the [formatting](portfolio/formatting) page.
+
+````
+
+
+(preemptive-merge)=
+## Help! I accidentally merged the Feedback Pull Request before my assignment was graded
+````{toggle}
 
 That's ok. You can fix it.
 
@@ -124,6 +210,6 @@ Make the title "Feedback" put a note in the body and then click the green "Creat
 
 Now you're done!
 
-If you have trouble, create an issue and tag `@@rhodyprog4ds/fall20instructors` for help.
+If you have trouble, create an issue and tag `@@rhodyprog4ds/fall22instructors` for help.
 
 ````
