@@ -33,9 +33,8 @@ Seeing the BrightSpace site requires loging in with your URI SSO and being enrol
 This will be the central location from which you can access all other materials.
 Any links that are for private discussion among those enrolled in the course will be available only from our course [Brightspace site](https://brightspace.uri.edu/d2l/home/158179).
 
-This is also where your grades will appear and how I will post announcements.
-
-For announcements, you can [customize](https://documentation.brightspace.com/EN/le/announcements/learner/enable_notifications_in_announcements.htm) how you receive them.
+<!-- 
+For announcements, you can [customize](https://documentation.brightspace.com/EN/le/announcements/learner/enable_notifications_in_announcements.htm) how you receive them. -->
 
 
 ## Prismia chat
@@ -45,20 +44,20 @@ We will use this for chatting and in-class understanding checks.
 
 On Prismia, all students see the instructor's messages, but only the Instructor and TA see student responses. 
 
-## Course Manual
+## Course website
 
 The course manual will have content including the class policies, scheduling, class notes, assignment information, and additional resources.
-This will be linked from Brightspace and available publicly online at [rhodyprog4ds.github.io/BrownFall21/](https://rhodyprog4ds.github.io/BrownFall21/).
+This will be linked from Brightspace and available publicly online at [rhodyprog4ds.github.io/FIXME/](https://rhodyprog4ds.github.io/FIXME/).
 Links to the course reference text and code documentation will also be included here in the assignments and class notes.
 
-## GitHub Classroom
+## GitHub
 
 You will need a [GitHub](https://github.com/) Account. If you do not already have one, please [create one](https://github.com/signup) by the first day of class. If you have one, but have not used it recently, you may need to update your password and login credentials as the [Authentication rules](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/about-authentication-to-github) changed over the summer.  In order to use the command line with https, you will need to [create a Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) for each device you use. In order to use the command line with SSH, set up your public key.
 
 
 
 (prorgramming-env)=
-### Programming Environment
+## Programming Environment
 
 This a programming course, so you will need a programming environment. In order to complete assignments you need the items listed in the requirements list. The easiest way to meet these requirements is to follow the recommendations below. I will provide instruction assuming that you have followed the recommendations.
 
