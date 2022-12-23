@@ -28,6 +28,9 @@ corpus
 document
   unit of text for analysis (one sample). Could be one sentence, one paragraph, or an article, depending on the goal
 
+gh 
+  GitHub's command line tools
+
 git
   a version control tool; it's a fully open source and always free tool, that can be hosted by anyone or used without a host, locally only.
 
