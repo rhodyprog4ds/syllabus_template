@@ -711,12 +711,12 @@ the next section, you’ll see how these achievements turn into grades.</p>
     </tr>
     <tr>
       <th>6</th>
-      <td>Modeling, Naive Bayes, classification performance metrics</td>
-      <td>[classification, evaluate]</td>
+      <td>Modeling,  classification performance metrics, cross validation</td>
+      <td>[evaluate]</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>decision trees, cross validation</td>
+      <td>Naive Bayes, decision trees</td>
       <td>[classification, evaluate]</td>
     </tr>
     <tr>
@@ -846,6 +846,13 @@ the next section, you’ll see how these achievements turn into grades.</p>
       <td>apply data reshaping, cleaning, and filtering manipulations reliably and correctly by assessing data as received</td>
     </tr>
     <tr>
+      <th>evaluate</th>
+      <td>Evaluate model performance</td>
+      <td>Explain basic performance metrics for different data science tasks</td>
+      <td>Apply and interpret basic model evaluation metrics to a held out test set</td>
+      <td>Evaluate a model with multiple metrics and cross validation</td>
+    </tr>
+    <tr>
       <th>classification</th>
       <td>Apply classification</td>
       <td>identify and describe what classification is, apply pre-fit classification models</td>
@@ -867,13 +874,6 @@ the next section, you’ll see how these achievements turn into grades.</p>
       <td>apply multiple clustering techniques, and interpret results</td>
     </tr>
     <tr>
-      <th>evaluate</th>
-      <td>Evaluate model performance</td>
-      <td>Explain basic performance metrics for different data science tasks</td>
-      <td>Apply and interpret basic model evaluation metrics to a held out test set</td>
-      <td>Evaluate a model with multiple metrics and cross validation</td>
-    </tr>
-    <tr>
       <th>optimize</th>
       <td>Optimize model parameters</td>
       <td>Identify when model parameters need to be optimized</td>
@@ -889,7 +889,7 @@ the next section, you’ll see how these achievements turn into grades.</p>
     </tr>
     <tr>
       <th>representation</th>
-      <td>Choose representations and transoform data</td>
+      <td>Choose representations and transform data</td>
       <td>Identify options for representing text and categorical data in many contexts</td>
       <td>Apply at least one representation to transform unstructured  or inappropriately data for model fitting or summarizing</td>
       <td>apply transformations in different contexts OR  compare and contrast multiple representations a single type of data in terms of model performance</td>
@@ -899,7 +899,7 @@ the next section, you’ll see how these achievements turn into grades.</p>
       <td>use industry standard data science tools and workflows to solve data science problems</td>
       <td>Solve well strucutred fully specified problems with a single tool pipeline</td>
       <td>Solve well-strucutred, open-ended problems, apply common structure to learn new features of standard tools</td>
-      <td>Independenltly scope and solve realistic data science problems OR independently learn releated tools  and describe strengths and weakensses of common tools</td>
+      <td>Independently scope and solve realistic data science problems OR independently learn releated tools  and describe strengths and weakensses of common tools</td>
     </tr>
   </tbody>
 </table>
@@ -984,11 +984,11 @@ the next section, you’ll see how these achievements turn into grades.</p>
     <tr>
       <th>process</th>
       <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
       <td>1</td>
       <td>1</td>
@@ -1084,21 +1084,38 @@ the next section, you’ll see how these achievements turn into grades.</p>
       <td>2</td>
     </tr>
     <tr>
+      <th>evaluate</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
       <th>classification</th>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
+      <td>1</td>
       <td>0</td>
-      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>regression</th>
@@ -1133,23 +1150,6 @@ the next section, you’ll see how these achievements turn into grades.</p>
       <td>0</td>
       <td>0</td>
       <td>2</td>
-    </tr>
-    <tr>
-      <th>evaluate</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
     </tr>
     <tr>
       <th>optimize</th>
@@ -1324,6 +1324,14 @@ the next section, you’ll see how these achievements turn into grades.</p>
       <td>1</td>
     </tr>
     <tr>
+      <th>evaluate</th>
+      <td>Evaluate a model with multiple metrics and cross validation</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
       <th>classification</th>
       <td>fit and apply classification models and select appropriate classification models for different contexts</td>
       <td>0</td>
@@ -1342,14 +1350,6 @@ the next section, you’ll see how these achievements turn into grades.</p>
     <tr>
       <th>clustering</th>
       <td>apply multiple clustering techniques, and interpret results</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>evaluate</th>
-      <td>Evaluate a model with multiple metrics and cross validation</td>
       <td>0</td>
       <td>1</td>
       <td>1</td>
@@ -1381,7 +1381,7 @@ the next section, you’ll see how these achievements turn into grades.</p>
     </tr>
     <tr>
       <th>workflow</th>
-      <td>Independenltly scope and solve realistic data science problems OR independently learn releated tools  and describe strengths and weakensses of common tools</td>
+      <td>Independently scope and solve realistic data science problems OR independently learn releated tools  and describe strengths and weakensses of common tools</td>
       <td>0</td>
       <td>0</td>
       <td>1</td>
